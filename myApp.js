@@ -11,7 +11,7 @@ app.get('/now', function(req, res, next) {
     tmp = new Date().toString()
     next();
   }, function(req, res) {
-    res.send(`{time: ${req.time}`);
+    res.send(`{time: ${tmp}}`);
 });
 
 console.log("Hello World");
