@@ -8,10 +8,10 @@ app.use((req, res, next)=>{
 )
 
 app.get('/now', function(req, res, next) {
-    tmp = new Date().toString()
+    req.time = new Date().toString()
     next();
   }, function(req, res) {
-    res.send(`{time: ${tmp}}`);
+    res.send(`{time: ${req.time}}`);
 });
 
 console.log("Hello World");
