@@ -18,3 +18,11 @@ https://survey.stackoverflow.co/2022/#most-popular-technologies-webframe-learn
 
 
 gcloud app deploy
+
+Cyclic and Render
+https://youtu.be/q8GSWGu2roA?si=X7KxEEHfl-kLzjye
+
+deploy to Cyclic
+https://youtu.be/HtqucM3BP5Q?si=dzPciEya31pE8cm8
+
+
