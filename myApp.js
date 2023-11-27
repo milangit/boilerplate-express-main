@@ -7,6 +7,13 @@ app.use((req, res, next)=>{
   }
 )
 
+app.get('/now', function(req, res, next) {
+    tmp = new Date().toString()
+    next();
+  }, function(req, res) {
+    res.send(tmp);
+});
+
 console.log("Hello World");
 
 // app.get("/", (req,res)=>{
@@ -29,6 +36,8 @@ app.get("/json", (req,res)=>{
     }    
 }
 )
+
+
 
 
 
