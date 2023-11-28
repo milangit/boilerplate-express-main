@@ -39,7 +39,7 @@ app.get("/json", (req,res)=>{
 
 
 app.get("/:word/echo", (req,res)=>{
-    res.send(`{"echo": "${req.params.word}"`)
+    res.send(`{"echo": "${req.params.word}"}`)
 }
 )
 
