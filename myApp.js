@@ -12,7 +12,7 @@ app.use((req, res, next)=>{
 app.use(bodyParser.urlencoded({extended: false}))
 
 app.post('/ppp', (req,res)=>{
-    res.send(`{"bbb": "${req.body}"}`);
+    res.send(`{"bbb": "${req.body.name}"}`);
 })
 
 app.get('/now', function(req, res, next) {
