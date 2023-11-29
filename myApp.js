@@ -11,6 +11,10 @@ app.use((req, res, next)=>{
 
 app.use(bodyParser.urlencoded({extended: false}))
 
+app.post('/ppp', (req,res)=>{
+    res.send(`{"bbb": "${req.body}"}`);
+})
+
 app.get('/now', function(req, res, next) {
     req.time = new Date().toString()
     next();
